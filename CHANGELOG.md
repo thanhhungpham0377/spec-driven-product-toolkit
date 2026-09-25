@@ -4,6 +4,8 @@ All notable changes to this toolkit are documented here.
 
 ## 1.1.0 - 2026-09-26
 
+Maintainer: Phạm Thanh Hùng
+
 ### Added
 
 - Capability-based component registry and profile files.

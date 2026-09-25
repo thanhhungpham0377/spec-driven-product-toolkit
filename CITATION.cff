@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Spec-Driven Product Toolkit"
+message: "If you use this toolkit, please cite it."
+type: software
+authors:
+  - family-names: "Phạm"
+    given-names: "Thanh Hùng"
+repository-code: "https://github.com/thanhhungpham0377/spec-driven-product-toolkit"
+url: "https://github.com/thanhhungpham0377/spec-driven-product-toolkit"
+version: "1.1.0"
+date-released: "2026-09-26"
+abstract: >
+  A spec-driven product development toolkit integrating AI coding workflow,
+  testing, UI/UX audit, security checks, database quality gates, and
+  upgradeable component providers.

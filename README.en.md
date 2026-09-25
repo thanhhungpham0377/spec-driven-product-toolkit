@@ -2,6 +2,14 @@
 
 [Phiên bản tiếng Việt](README.md)
 
+## Author and maintainer
+
+**Phạm Thanh Hùng** is the author, architect, integrator, and maintainer of this toolkit.
+
+The project defines the product-development profiles, integrates the workflow and audit components, and maintains the capability registry, compatibility model, installer, provenance documentation, and upgrade strategy. Upstream projects and their licenses remain separately acknowledged in the [source catalog](references/catalog.md).
+
+GitHub: [@thanhhungpham0377](https://github.com/thanhhungpham0377)
+
 An installable skill and tooling kit for developing products with AI coding agents through a structured process:
 
 ```text
