@@ -1,0 +1,6 @@
+{
+  "name": "balanced",
+  "description": "Practical quality gates for a real application and small or medium team.",
+  "stages": ["discover", "design", "plan", "implement", "test", "audit", "pr-review"],
+  "capabilities": ["workflow", "pre-commit", "browser-e2e", "accessibility-audit", "performance-audit", "sast", "secret-detection", "dependency-scanning", "sql-quality", "pr-feedback"]
+}

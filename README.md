@@ -20,6 +20,11 @@ Toolkit được thiết kế cho vibe coding có kiểm soát: agent vẫn làm
 | [`references/profiles.md`](references/profiles.md) | Tiêu chí chọn profile và các giai đoạn workflow |
 | [`references/catalog.md`](references/catalog.md) | Chức năng, repo nguồn và thông tin truy nguyên |
 | [`scripts/install_profile.py`](scripts/install_profile.py) | Preflight, chọn profile và tạo manifest cài đặt |
+| [`components/registry.json`](components/registry.json) | Registry capability, provider và nguồn upstream |
+| [`profiles/`](profiles/) | Định nghĩa profile có version |
+| [`scripts/check_compatibility.py`](scripts/check_compatibility.py) | Kiểm tra conflict và tool còn thiếu |
+| [`scripts/upgrade_component.py`](scripts/upgrade_component.py) | Chuyển provider an toàn và tạo backup |
+| [`scripts/rollback_component.py`](scripts/rollback_component.py) | Rollback manifest |
 | [`agents/openai.yaml`](agents/openai.yaml) | Tên hiển thị và prompt mặc định trong Codex |
 
 ## Ba profile
@@ -113,6 +118,16 @@ Tool thiếu không bị bỏ qua âm thầm. Installer trả về trạng thái
 Toolkit này là một composition layer do tác giả repo này xây dựng, lấy cảm hứng và chọn lọc vai trò từ nhiều dự án mã nguồn mở. Không nên hiểu đây là endorsement hay bản fork chính thức. Danh sách đầy đủ repo nguồn, chức năng và liên kết truy nguyên nằm tại [references/catalog.md](references/catalog.md).
 
 Khi tái sử dụng hoặc phân phối lại, hãy kiểm tra license và điều khoản của từng upstream project.
+
+## Khả năng thay thế và nâng cấp
+
+Các component được gọi theo capability thay vì tên repo:
+
+```text
+profile → capability → provider → adapter → install/check command
+```
+
+Xem [version-policy.md](references/version-policy.md) để biết vòng đời provider và [migration-guide.md](references/migration-guide.md) để nâng cấp/rollback. Thay đổi được theo dõi trong [VERSION](VERSION) và [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 

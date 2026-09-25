@@ -1,0 +1,6 @@
+{
+  "name": "prototype",
+  "description": "Fast feedback for a personal prototype or small MVP.",
+  "stages": ["discover", "plan", "implement", "smoke-test", "review"],
+  "capabilities": ["workflow", "browser-e2e"]
+}

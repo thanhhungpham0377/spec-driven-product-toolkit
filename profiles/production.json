@@ -1,0 +1,6 @@
+{
+  "name": "production",
+  "description": "Traceable specifications and protected quality gates for deployed or sensitive systems.",
+  "stages": ["spec", "design", "plan", "implement", "full-test", "full-audit", "protected-pr", "release", "retro"],
+  "capabilities": ["workflow", "durable-spec", "pre-commit", "browser-e2e", "accessibility-audit", "performance-audit", "sast", "secret-detection", "dependency-scanning", "containers-iac", "deep-security", "actions-security", "sql-quality", "migration-authority", "pr-feedback"]
+}

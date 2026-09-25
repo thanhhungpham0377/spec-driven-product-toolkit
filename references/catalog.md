@@ -25,3 +25,5 @@ The main workflow is based on ideas from [Matt Pocock's skills](https://github.c
 | Pre-commit | pre-commit | https://github.com/pre-commit/pre-commit | Run local quality hooks |
 
 The generated installation records the selected profile, detected tools, missing tools, and this catalog snapshot in the target repository.
+
+Provider replacement follows the capability contracts in `components/compatibility.json`; implementation-specific integration belongs behind the adapter boundary documented in `adapters/README.md`.

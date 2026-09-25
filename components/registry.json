@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "components": {
+    "matt-pocock": {"capability": "workflow", "provider": "matt-pocock", "source": "https://github.com/mattpocock/skills", "command": null, "interface_version": 1, "status": "active"},
+    "spec-kit": {"capability": "durable-spec", "provider": "spec-kit", "source": "https://github.com/github/spec-kit", "command": "specify", "interface_version": 1, "status": "active"},
+    "pre-commit": {"capability": "pre-commit", "provider": "pre-commit", "source": "https://github.com/pre-commit/pre-commit", "command": "pre-commit", "interface_version": 1, "status": "active"},
+    "playwright": {"capability": "browser-e2e", "provider": "playwright", "source": "https://github.com/microsoft/playwright", "command": "npx", "interface_version": 1, "status": "active"},
+    "axe-core": {"capability": "accessibility-audit", "provider": "axe-core", "source": "https://github.com/dequelabs/axe-core", "command": "npx", "interface_version": 1, "status": "active"},
+    "lighthouse": {"capability": "performance-audit", "provider": "lighthouse", "source": "https://github.com/GoogleChrome/lighthouse", "command": "npx", "interface_version": 1, "status": "active"},
+    "semgrep": {"capability": "sast", "provider": "semgrep", "source": "https://github.com/semgrep/semgrep", "command": "semgrep", "interface_version": 1, "status": "active"},
+    "gitleaks": {"capability": "secret-detection", "provider": "gitleaks", "source": "https://github.com/gitleaks/gitleaks", "command": "gitleaks", "interface_version": 1, "status": "active"},
+    "osv-scanner": {"capability": "dependency-scanning", "provider": "osv-scanner", "source": "https://github.com/google/osv-scanner", "command": "osv-scanner", "interface_version": 1, "status": "active"},
+    "trivy": {"capability": "containers-iac", "provider": "trivy", "source": "https://github.com/aquasecurity/trivy", "command": "trivy", "interface_version": 1, "status": "active"},
+    "codeql": {"capability": "deep-security", "provider": "codeql", "source": "https://github.com/github/codeql", "command": "codeql", "interface_version": 1, "status": "active"},
+    "zizmor": {"capability": "actions-security", "provider": "zizmor", "source": "https://github.com/woodruffw/zizmor", "command": "zizmor", "interface_version": 1, "status": "active"},
+    "sqlfluff": {"capability": "sql-quality", "provider": "sqlfluff", "source": "https://github.com/sqlfluff/sqlfluff", "command": "sqlfluff", "interface_version": 1, "status": "active"},
+    "atlas": {"capability": "migration-authority", "provider": "atlas", "source": "https://github.com/ariga/atlas", "command": "atlas", "interface_version": 1, "status": "active"},
+    "reviewdog": {"capability": "pr-feedback", "provider": "reviewdog", "source": "https://github.com/reviewdog/reviewdog", "command": "reviewdog", "interface_version": 1, "status": "active"}
+  }
+}

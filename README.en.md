@@ -20,6 +20,11 @@ The toolkit is designed for controlled vibe coding: the agent can move quickly, 
 | [`references/profiles.md`](references/profiles.md) | Profile selection criteria and workflow stages |
 | [`references/catalog.md`](references/catalog.md) | Component responsibilities, upstream repositories, and provenance |
 | [`scripts/install_profile.py`](scripts/install_profile.py) | Profile selection, preflight checks, and installation manifest generation |
+| [`components/registry.json`](components/registry.json) | Capability-to-provider registry and upstream provenance |
+| [`profiles/`](profiles/) | Versioned profile definitions |
+| [`scripts/check_compatibility.py`](scripts/check_compatibility.py) | Conflict and local availability checks |
+| [`scripts/upgrade_component.py`](scripts/upgrade_component.py) | Safe candidate-provider switch with backup |
+| [`scripts/rollback_component.py`](scripts/rollback_component.py) | Manifest-only rollback |
 | [`agents/openai.yaml`](agents/openai.yaml) | Codex display name and default prompt |
 
 ## Three profiles
@@ -113,6 +118,16 @@ Missing tools are never silently ignored. The installer reports an incomplete ve
 This toolkit is an original composition layer maintained by the repository author. It is inspired by and selectively integrates ideas and responsibilities from several open-source projects. It is not an endorsement or official fork. The full list of upstream repositories, component roles, and traceability links is available in [references/catalog.md](references/catalog.md).
 
 When reusing or redistributing this toolkit, review the license and contribution terms of each upstream project.
+
+## Future-proofing and upgrades
+
+Components are addressed by capability rather than repository name:
+
+```text
+profile → capability → provider → adapter → install/check command
+```
+
+Use [`references/version-policy.md`](references/version-policy.md) for the replacement lifecycle and [`references/migration-guide.md`](references/migration-guide.md) for upgrade/rollback commands. Changes are tracked in [`VERSION`](VERSION) and [`CHANGELOG.md`](CHANGELOG.md).
 
 ## License
 

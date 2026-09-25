@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "contracts": {
+    "workflow": {"interface_version": 1, "required_output": ["plan", "tasks", "review"]},
+    "browser-e2e": {"interface_version": 1, "required_output": ["test-result"]},
+    "accessibility-audit": {"interface_version": 1, "required_output": ["json-report"]},
+    "performance-audit": {"interface_version": 1, "required_output": ["json-report"]},
+    "sast": {"interface_version": 1, "required_output": ["findings"]},
+    "secret-detection": {"interface_version": 1, "required_output": ["findings"]},
+    "dependency-scanning": {"interface_version": 1, "required_output": ["findings"]},
+    "sql-quality": {"interface_version": 1, "required_output": ["findings"]},
+    "pr-feedback": {"interface_version": 1, "required_output": ["annotations"]}
+  }
+}
