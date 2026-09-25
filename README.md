@@ -1,5 +1,7 @@
 # Spec-Driven Product Toolkit
 
+[English version](README.en.md)
+
 Một bộ skill và installer giúp phát triển sản phẩm bằng AI coding agent theo quy trình:
 
 ```text
